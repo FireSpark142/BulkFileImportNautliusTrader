@@ -31,5 +31,5 @@ def main(venue_str, strategy_p: str, strategy_config_p: str):
     dd.to_csv('final_reports/final_results.csv', header=False)
 
 
-main("NYSE", 'nautilus_trader.examples.strategies.ema_cross:EMACross',
-     'nautilus_trader.examples.strategies.ema_cross:EMACrossConfig')
+main("NYSE", 'strategies:EMACross.py',
+     'strategies:EMACrossConfig')

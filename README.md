@@ -16,3 +16,13 @@ Windows
 poetry install
 poetry run python src/backtesttemplate.py
 ```
+
+Put your strategies inside the src/strategies folder and in the main call inside backtesttemplate.py -
+
+To call the strategy do the following:
+
+```
+main("NYSE", 'strategies:StrategyName.py',
+     'strategies:StrategyConfigClass')
+
+```
